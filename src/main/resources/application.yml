@@ -1,0 +1,19 @@
+server:
+  port: ${SERVER_PORT:10418}
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:nhnacademy-be12-trillion/config-repo.git
+          default-label: main
+          ignore-local-ssh-settings: true
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: ${EUREKA_URL}
