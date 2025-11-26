@@ -1,4 +1,4 @@
-name: order-service package
+name: config-service package
 
 on:
   push:
