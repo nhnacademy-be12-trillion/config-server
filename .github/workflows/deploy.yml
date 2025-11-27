@@ -69,6 +69,8 @@ jobs:
             echo "SSH 접속 및 디렉토리 이동..."
             mkdir -p ${{ env.DEPLOY_DIR }}
             cd ${{ env.DEPLOY_DIR }}
+            
+            export CONFIG_SERVER_PRIVATE_KEY="${{ secrets.CONFIG_SERVER_PRIVATE_KEY }}"
 
             echo "Docker Registry 로그인"
             echo ${{secrets.GHCR_TOKEN}} | docker login ${{ env.REGISTRY }} -u ${{ env.REGISTRY_OWNER }} --password-stdin
@@ -79,5 +81,3 @@ jobs:
 
             echo "Docker Registry 로그아웃..."
             docker logout ${{ env.REGISTRY }}
-
-            echo "멤버 서비스 배포 완료!"
