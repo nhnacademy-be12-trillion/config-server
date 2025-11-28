@@ -8,9 +8,10 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:nhnacademy-be12-trillion/config-repo.git
+          uri: https://github.com/nhnacademy-be12-trillion/config-repo
           default-label: main
-          ignore-local-ssh-settings: true
+          username: serrot24
+          password: ${GHCR_PAT}
 eureka:
   client:
     register-with-eureka: true
