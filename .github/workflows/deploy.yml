@@ -70,7 +70,7 @@ jobs:
             mkdir -p ${{ env.DEPLOY_DIR }}
             cd ${{ env.DEPLOY_DIR }}
             
-            export CONFIG_SERVER_PRIVATE_KEY="${{ secrets.CONFIG_SERVER_PRIVATE_KEY }}"
+            export SPRING_CLOUD_CONFIG_SERVER_GIT_PRIVATEKEY="${{ secrets.SPRING_CLOUD_CONFIG_SERVER_GIT_PRIVATEKEY }}"
 
             echo "Docker Registry 로그인"
             echo ${{secrets.GHCR_TOKEN}} | docker login ${{ env.REGISTRY }} -u ${{ env.REGISTRY_OWNER }} --password-stdin
