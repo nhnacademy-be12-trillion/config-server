@@ -12,6 +12,7 @@ spring:
           default-label: main
           username: serrot24
           password: ${GHCR_PAT}
+
 eureka:
   client:
     register-with-eureka: true
