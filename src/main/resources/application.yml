@@ -8,10 +8,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/nhnacademy-be12-trillion/config-repo
+          uri: git@github.com/nhnacademy-be12-trillion/config-repo
           default-label: main
-          username: serrot24
-          password: ${GHCR_PAT}
+          private-key: ${CONFIG_PRIVATE_KEY}
+          strict-host-key-checking: false
 
 eureka:
   client:
