@@ -10,7 +10,7 @@ spring:
         git:
           uri: git@github.com:nhnacademy-be12-trillion/config-repo
           default-label: main
-          private-key: file:/etc/ssh/config_key
+          private-key: /etc/ssh/config_key
           strict-host-key-checking: false
           ignore-local-ssh-settings: true
 
