@@ -6,7 +6,7 @@ spring:
     name: config-server
   cloud:
     config:
-      server:p
+      server:
         git:
           uri: git@github.com:nhnacademy-be12-trillion/config-repo
           default-label: main
