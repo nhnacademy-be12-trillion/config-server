@@ -12,6 +12,7 @@ spring:
           default-label: main
           private-key: file:/etc/ssh/config_key
           strict-host-key-checking: false
+          ignore-local-ssh-settings: true
 
 eureka:
   client:
