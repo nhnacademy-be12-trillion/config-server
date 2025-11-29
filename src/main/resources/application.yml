@@ -10,48 +10,49 @@ spring:
         git:
           uri: git@github.com:nhnacademy-be12-trillion/config-repo
           default-label: main
-          private-key: |
-            -----BEGIN OPENSSH PRIVATE KEY-----
-            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
-            -----END OPENSSH PRIVATE KEY-----
           ignore-local-ssh-settings: true
           host-key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCj7ndNxQowgcQnjshcLrqPEiiphnt+VTTvDP6mHBL9j1aNUkY4Ue1gvwnGLVlOhGeYrnZaMgRK6+PKCUXaDbC7qtbW8gIkhL7aGCsOr/C56SJMy/BCZfxd1nWzAOxSDPgVsmerOBYfNqltV9/hWCqBywINIR+5dIg6JTJ72pcEpEjcYgXkE2YEFXV1JHnsKgbLWNlhScqb2UmyRkQyytRLtL+38TGxkxCflmO+5Z8CSSNY7GidjMIZ7Q4zMjA2n1nGrlTDkzwDCsw+wqFPGQA179cnfGWOWRVruj16z6XyvxvjJwbz0wQZ75XK5tKSb7FNyeIEs4TT4jk+S4dhPeAUC5y+bDYirYgM4GC7uEnztnZyaVWQ7B381AK4Qdrwt51ZqExKbQpTUNn+EjqoTwvqNj4kqx5QUCI0ThS/YkOxJCXmPUWZbhjpCg56i+2aB6CmK2JGhn57K5mj0MNdBXA4/WnwH6XoPWJzK5Nyu2zB3nAZp+S5hpQs+p1vN1/wsjk=
           host-key-algorithm: ssh-rsa
+          private-key: |
+            -----BEGIN OPENSSH PRIVATE KEY-----
+  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
+  -----END OPENSSH PRIVATE KEY-----
+
 
 
 eureka:
