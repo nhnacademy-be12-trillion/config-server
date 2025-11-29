@@ -10,7 +10,7 @@ spring:
         git:
           uri: git@github.com:nhnacademy-be12-trillion/config-repo.git
           default-label: main
-          private-key: ${SPRING_CONFIG_PRIVATEKEY}
+          private-key: ${CONFIG_PRIVATE_KEY}
           ignore-local-ssh-settings: true
 #          host-key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
 #          host-key-algorithm: ssh-ed25519
