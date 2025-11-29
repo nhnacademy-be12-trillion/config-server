@@ -18,8 +18,8 @@ spring:
             AAAEDSQQg6O5j+24M7RlJxiMJdC8s7A7KinzAA5BgOH4jvY56Jh/SHas7H1wxW9DEgQSWa
             TLsHQc9V1eQ9z5CY3E9MAAAAE3NlcnJvdDI0QGdpdGh1Yi5jb20BAg==
             -----END OPENSSH PRIVATE KEY-----
-          host-key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
-          host-key-algorithm: ssh-ed25519
+#          host-key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
+#          host-key-algorithm: ssh-ed25519
           ignore-local-ssh-settings: true
 
 
@@ -29,3 +29,4 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: ${EUREKA_URL}
+    enabled: false
