@@ -8,11 +8,48 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:nhnacademy-be12-trillion/config-repo
+          uri: git@github.com:nhnacademy-be12-trillion/config-repo.git
           default-label: main
-          ignore-local-ssh-settings: true
-          private-key: ${SPRING_CLOUD_CONFIG_SERVER_GIT_PRIVATE_KEY}
-          strictHostKeyChecking: false
+          private-key: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
 
 
 eureka:
